@@ -11,7 +11,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: minmax(200px, 0.9fr) 4fr;
-  grid-template-rows: 1.3fr 4fr;
+  grid-template-rows: 160px 4fr;
 }
 
 nav {
@@ -177,4 +177,48 @@ main {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.327);
+  padding-left: 1.5%;
+}
+
+.project-container {
+  height: 70%;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 300px));
+  /* grid-auto-rows: minmax(0.5fr, 1fr); */
+  gap: 26px;
+  margin-bottom: 50px;
+}
+
+h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.card.project-card {
+  background-color: white;
+  padding: 30px 25px;
+  border-radius: 10px;
+  border-left: 9px solid orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  line-height: 1.1rem;
+  color: rgb(97, 97, 97);
+  box-shadow: 3px 3px 6px rgba(110, 110, 110, 0.2);
+}
+
+.card-text span {
+  font-weight: 600;
+  font-size: 1rem;
+  color: black;
+}
+
+.card-icons {
+  display: flex;
+  gap: 24px;
+  align-self: flex-end;
+  margin-top: 16px;
 }
