@@ -61,7 +61,7 @@ nav {
 
 .sidebar-menu img {
   width: 20px;
-  fill: "currentColor";
+  /* fill: "currentColor"; */
 }
 
 .menu-2 {
@@ -208,6 +208,11 @@ h4 {
   line-height: 1.1rem;
   color: rgb(97, 97, 97);
   box-shadow: 3px 3px 6px rgba(110, 110, 110, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.card.project-card:hover {
+  transform: scale(1.025);
 }
 
 .card-text span {
@@ -221,4 +226,71 @@ h4 {
   gap: 24px;
   align-self: flex-end;
   margin-top: 16px;
+}
+
+main {
+  display: flex;
+  gap: 3%;
+}
+
+.left-main {
+  flex: 3;
+}
+
+.right-main {
+  flex: 1;
+}
+
+.announcements-card,
+.trending-card {
+  background-color: white;
+  height: 280px;
+  width: 190px;
+  margin-right: 36px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 6px rgba(110, 110, 110, 0.2);
+  padding: 40px;
+  font-size: 0.77rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: rgb(97, 97, 97);
+}
+
+.right-main span {
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.ann-2 {
+  border-top: 1px solid rgb(193, 193, 193);
+  border-bottom: 1px solid rgb(193, 193, 193);
+  padding: 20px 0;
+}
+
+.trending-card {
+  gap: 30px;
+  padding: 30px;
+  width: 210px;
+}
+
+.trending-user img {
+  width: 46px;
+  height: 46px;
+  object-fit: cover;
+  object-position: 40% 0;
+  border-radius: 23px;
+}
+
+.trending-user {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 0.82rem;
+}
+
+.username-black {
+  color: black;
+  font-weight: 500;
 }
