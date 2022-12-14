@@ -61,7 +61,6 @@ nav {
 
 .sidebar-menu img {
   width: 20px;
-  /* fill: "currentColor"; */
 }
 
 .menu-2 {
@@ -182,10 +181,9 @@ main {
 
 .project-container {
   height: 70%;
-  width: 70%;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 300px));
-  /* grid-auto-rows: minmax(0.5fr, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 0.9fr));
   gap: 26px;
   margin-bottom: 50px;
 }
@@ -225,7 +223,7 @@ h4 {
   display: flex;
   gap: 24px;
   align-self: flex-end;
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 main {
@@ -273,6 +271,7 @@ main {
   gap: 30px;
   padding: 30px;
   width: 210px;
+  margin-bottom: 30px;
 }
 
 .trending-user img {
